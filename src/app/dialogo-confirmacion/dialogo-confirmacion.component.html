@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>{{ data.titulo }}</h1>
+<div mat-dialog-content style="text-align: center; overflow: hidden">
+    <p> {{ data.mensaje }} </p>
+</div>
+<div mat-dialog-actions style="flex: 1 1 auto; justify-content: center">
+
+
+    <button type="button" mat-raised-button cdkFocusInitial
+        class="color-warn-800" [mat-dialog-close]="true">
+        <mat-icon>save</mat-icon>
+        GUARDAR
+    </button>
+    
+    <button type="button" class="color-primary-100" mat-raised-button [mat-dialog-close]>
+        <mat-icon>close</mat-icon>
+        CANCELAR
+    </button>    
+</div>

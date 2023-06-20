@@ -1,0 +1,22 @@
+<div class="login">
+  <form class="custom-form">
+    <h1>{{titulo}}</h1>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Usuario" [(ngModel)]="user" required="required">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="password" placeholder="Contraseña anterior" [(ngModel)]="oldPassword" required="required">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="password" placeholder="Contraseña nueva" [(ngModel)]="newPassword" required="required">
+    </mat-form-field>     
+    <br>  
+    <button mat-raised-button color="primary" [disabled]="!isFormValid()" (click)="navigateToConfirmation()">Continuar</button>
+  </form>
+  </div>
+
+
+  
